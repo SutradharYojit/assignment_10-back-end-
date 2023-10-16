@@ -1,0 +1,22 @@
+{
+  "name": "assignment_10_backend",
+  "version": "1.0.0",
+  "description": "assignment_10 (mini e-commerce)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "author": "Yojit Sutradhar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.11.0",
+    "firebaseui": "^6.1.0",
+    "install": "^0.13.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "npm": "^10.2.0"
+  }
+}
