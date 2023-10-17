@@ -35,4 +35,12 @@ router.post('/deleteCart', async (req, res, next) => {
     });
 })
 
+
+router.post('/placedToOrder', async (req, res, next) => {
+    const data = req.body;
+    await fireStore.collection("CartHistory").add(data).then(() => {
+        return res.status(201).json({ success: true, message: 'Cart added successfully' });
+    });
+});
+
 module.exports = router;
