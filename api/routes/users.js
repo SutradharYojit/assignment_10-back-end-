@@ -26,7 +26,7 @@ router.post('/updateUser', (req, res, next) => {
     fireStore.collection("Users").doc(id).update(update).then(() => {
         return res.status(201).json({ success: true, message: "profile  update successfully" });
     });
-
+    
 })
 
 module.exports = router;
